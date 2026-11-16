@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b4f91">
+  <meta name="description" content="مكتب محمد السرجاني - خدمات ضريبية ومحاسبية وتأسيس الشركات والتراخيص.">
+  <title>مكتب محمد السرجاني</title>
+  <style>
+    :root{--blue:#0b4f91;--blue2:#176db7;--pale:#eef6ff;--ink:#17324d;--muted:#64788d;--line:#dce8f4}
+    *{box-sizing:border-box} body{margin:0;background:#f5f9fe;color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.75}
+    a{color:inherit;text-decoration:none} .wrap{width:min(920px,92%);margin:auto}
+    header{padding:34px 0 24px;text-align:center;background:linear-gradient(145deg,#fff,#eaf4ff);border-bottom:1px solid var(--line)}
+    .logo{width:112px;height:112px;object-fit:contain;border-radius:22px;background:#fff;border:1px solid var(--line);padding:8px;box-shadow:0 8px 24px #0b4f9112}
+    .logo-fallback{display:none;width:112px;height:112px;margin:auto;border-radius:22px;background:var(--blue);color:#fff;font-size:30px;font-weight:bold;align-items:center;justify-content:center}
+    h1{margin:12px 0 2px;color:var(--blue);font-size:clamp(24px,5vw,34px)}
+    .subtitle{margin:0;color:var(--muted);font-size:15px}
+    main{padding:24px 0 42px}.quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:22px}
+    .quick a,.quick button{font:inherit;border:1px solid var(--line);border-radius:15px;background:#fff;min-height:70px;padding:12px 14px;display:flex;align-items:center;gap:12px;text-align:right;cursor:pointer;box-shadow:0 5px 18px #12395a0a;transition:.2s}
+    .quick a:hover,.quick button:hover{transform:translateY(-2px);border-color:#9fc5ec}
+    .mark{width:42px;height:42px;flex:0 0 42px;border-radius:12px;display:grid;place-items:center;font-weight:bold;background:var(--pale);color:var(--blue);font-size:14px}
+    .vod{background:#fff0f0;color:#e60000;font-size:20px}.ipa{background:#eaf2ff;color:#1765b2;font-size:13px}
+    .wa{background:#e9f9ef;color:#159447;font-size:20px}.phone{background:#edf5ff;color:#0b4f91;font-size:20px}
+    .brand-logo{width:96px;max-width:38%;display:flex;align-items:center;justify-content:center;flex:0 0 96px}.brand-logo img{display:block;width:100%;height:auto;max-height:42px;object-fit:contain}.quick strong{display:block;font-size:15px}.quick small{display:block;color:var(--muted);font-size:12px}
+    section.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 8px 28px #12395a08}
+    h2{font-size:20px;color:var(--blue);margin:0 0 14px}
+    .services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .service{background:#f7fbff;border:1px solid #e4eef8;border-radius:11px;padding:10px 12px;font-size:14px}
+    .service:before{content:"✓";color:var(--blue2);font-weight:bold;margin-left:8px}
+    .contacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .contact{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfdff}
+    .contact b{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px}.contact-logo{width:20px;height:20px;object-fit:contain}.contact a{font-weight:bold;color:var(--blue);direction:ltr;display:inline-block}
+    .copy{border:0;background:var(--pale);color:var(--blue);padding:7px 11px;border-radius:9px;margin-right:8px;cursor:pointer;font:inherit;font-size:12px}
+    .note{color:var(--muted);font-size:12px;margin:12px 0 0}
+    footer{text-align:center;color:var(--muted);font-size:12px;padding:12px 0 28px}
+    @media(max-width:560px){.quick{grid-template-columns:1fr 1fr;gap:8px}.quick a,.quick button{padding:10px;gap:8px}.quick strong{font-size:13px}.quick small{font-size:11px}.services,.contacts{grid-template-columns:1fr}.panel{padding:16px!important}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img class="logo" src="assets/office-logo.jpeg" alt="شعار مكتب محمد السرجاني" onerror="this.style.display='none';document.querySelector('.logo-fallback').style.display='flex'">
+    <div class="logo-fallback" aria-hidden="true">م س</div>
+    <h1>مكتب محمد السرجاني</h1>
+    <p class="subtitle">خدمات ضريبية ومحاسبية واستشارات وتأسيس الشركات</p>
+  </div>
+</header>
+<main class="wrap">
+  <nav class="quick" aria-label="روابط سريعة">
+    <a href="tel:*9*7*01006906248">
+      <span class="brand-logo"><img src="assets/vodafone-cash-logo.svg" alt="Vodafone Cash"></span><span><strong>فودافون كاش</strong><small>01006906248</small></span>
+    </a>
+    <button type="button" onclick="copyText('01006906248','تم نسخ رقم إنستاباي')">
+      <span class="brand-logo"><img src="assets/instapay-logo.svg" alt="InstaPay"></span><span><strong>إنستاباي</strong><small>نسخ رقم الموبايل</small></span>
+    </button>
+    <a href="#services"><span class="mark">▤</span><span><strong>خدمات المكتب</strong><small>عرض جميع الخدمات</small></span></a>
+    <a href="#contacts"><span class="mark phone">☎</span><span><strong>أرقام التواصل</strong><small>موبايل وواتساب وأرضي</small></span></a>
+  </nav>
+
+  <section class="panel" id="services">
+    <h2>خدمات المكتب</h2>
+    <div class="services">
+      <div class="service">استشارات ضريبية</div>
+      <div class="service">خبير مثمن</div>
+      <div class="service">مصفي قضائي</div>
+      <div class="service">الفواتير الإلكترونية</div>
+      <div class="service">مراقب حسابات الشركات المساهمة</div>
+      <div class="service">ضريبة الدخل</div>
+      <div class="service">ضريبة القيمة المضافة</div>
+      <div class="service">إقرارات ضريبية</div>
+      <div class="service">تأسيس الشركات</div>
+      <div class="service">افتتاح فروع الشركات المصرية بالدول العربية</div>
+      <div class="service">دراسات الجدوى الاقتصادية</div>
+      <div class="service">الميزانيات العمومية</div>
+      <div class="service">سجل المستوردين والمصدرين</div>
+      <div class="service">السجلات التجارية</div>
+      <div class="service">ترخيص المحال والمنشآت</div>
+      <div class="service">ترخيص المنشآت الصناعية</div>
+    </div>
+  </section>
+
+  <section class="panel" id="contacts">
+    <h2>أرقام التواصل والدفع</h2>
+    <div class="contacts">
+      <div class="contact"><b>رقم الموبايل</b><a href="tel:01006906248">01006906248</a><button class="copy" onclick="copyText('01006906248','تم نسخ رقم الموبايل')">نسخ</button></div>
+      <div class="contact"><b><img class="contact-logo" src="assets/whatsapp-logo.svg" alt="WhatsApp"> واتساب</b><a href="https://wa.me/201006906248" target="_blank" rel="noopener">01006906248</a><button class="copy" onclick="copyText('01006906248','تم نسخ رقم واتساب')">نسخ</button></div>
+      <div class="contact"><b>الخط الأرضي</b><a href="tel:0472981588">0472981588</a><button class="copy" onclick="copyText('0472981588','تم نسخ الخط الأرضي')">نسخ</button></div>
+    </div>
+    <p class="note">للدفع عبر إنستاباي، استخدم رقم الموبايل داخل تطبيق InstaPay. قد تختلف خطوات التحويل حسب التطبيق وشركة الاتصالات.</p>
+  </section>
+</main>
+<footer>مكتب محمد السرجاني</footer>
+<script>
+function copyText(value, message){
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(value).then(()=>alert(message)).catch(()=>prompt('انسخ الرقم:',value));
+  }else{prompt('انسخ الرقم:',value);}
+}
+</script>
+</body>
+</html>
